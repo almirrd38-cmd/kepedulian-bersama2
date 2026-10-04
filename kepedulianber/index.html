@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KepedulianBersama</title>
+    <style>
+        body {
+            background-color: #e9f5ee; /* Warna hijau sangat muda */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 15px 40px;
+            color: white;
+        }
+        .nav-brand {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #a8e6cf;
+        }
+
+        /* posisi tengah */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* KOTAK PUTIH */
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px; /* Jarak antar kotak */
+        }
+
+        .program-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .program-card {
+            background-color: #f4f9f5;
+            border: 1px solid #d1e7d6;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .program-card h4 {
+            margin-top: 0;
+            color: #2E8B57;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Kepedulian Bersama</div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="program.html">Program</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+
+        <!-- LOGO, JUDUL, TENTANG -->
+        <div class="card">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="width: 120px; height: 120px; background-color: #2E8B57; color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; font-size: 40px; font-weight: bold;">
+                    KB
+                </div>
+            </div>
+            <h1 style="text-align:center; color:rgb(5, 155, 0)">KEPEDULIAN BERSAMA</h1>
+            <p id="tentang">Kepedulian bersama adalah komunitas sosial yang bergerak di bidang kemanusiaan, pendidikan, dan lingkungan. Kami percaya bahwa kepedulian kecil yang dilakukan membawa dampak besar.</p>
+        </div>
+
+        <!-- VISI & MISI -->
+        <div class="card">
+            <div class="visi">
+                <h3>Visi</h3>
+                <p>Menjadi wadah kepedulian yang membawa manfaat nyata bagi masyarakat</p>
+            </div>
+            <div class="Misi">
+                <h3>Misi</h3>
+                <ul>
+                    <li>Mengadakan bakti sosial secara rutin</li>
+                    <li>Menggalang donasi pendidikan untuk anak kurang mampu</li>
+                    <li>Mengadakan gerakan peduli lingkungan</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROGRAM -->
+        <div class="card" id="program">
+            <h3 style="text-align: center; color: #2E8B57;">Program Kami</h3>
+            <div class="program-list">
+                <div class="program-card">
+                    <h4>📚 Peduli Pendidikan</h4>
+                    <p>Menggalang donasi buku dan memberikan bimbingan belajar gratis untuk anak kurang mampu.</p>
+                </div>
+                <div class="program-card">
+                    <h4>🤝 Bakti Sosial</h4>
+                    <p>Mengadakan kegiatan sosial rutin seperti pembagian sembako dan donor darah.</p>
+                </div>
+                <div class="program-card">
+                    <h4>🌱 Peduli Lingkungan</h4>
+                    <p>Aksi nyata menjaga bumi melalui penanaman pohon dan kampanye pengurangan sampah plastik.</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
